@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{float}
+\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+\definecolor{aqua}{rgb}{0.0, 1.0, 1.0}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{azure(colorwheel)}{rgb}{0.0, 0.5, 1.0}
+\definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
+\definecolor{iceberg}{rgb}{0.44, 0.65, 0.82}
+\definecolor{indigo(dye)}{rgb}{0.0, 0.25, 0.42}
+\definecolor{indiagreen}{rgb}{0.07, 0.53, 0.03}
+\definecolor{huntergreen}{rgb}{0.21, 0.37, 0.23}
+\definecolor{islamicgreen}{rgb}{0.0, 0.56, 0.0}
+\definecolor{lasallegreen}{rgb}{0.03, 0.47, 0.19}
+\definecolor{kellygreen}{rgb}{0.3, 0.73, 0.09}
+\definecolor{limegreen}{rgb}{0.2, 0.8, 0.2}
+\definecolor{calpolypomonagreen}{rgb}{0.12, 0.3, 0.17}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+%\begin{figure}
+%	\includegraphics[scale=0.15]{foto_mm_new}
+%\end{figure}
+\begin{center}
+    \textbf{\Huge \scshape Lara Miletić} \\ \vspace{1pt}
+    \small DOB: 19/09/1994 $|$
+    \small M: +385 98 928 498 $|${ e-mail: lara.mihic@gmail.com, lara.miletic@halmed.hr}$|$
+
+\end{center}
+%-----------EXPERIENCE-----------
+\section{{Experience}}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {{Senior Associate for Pharmacovigilance and Rational Pharmacotherapy}}{January 2022 -- Present}
+      {Croatian Agency for Medicinal Products and Medical Devices (HALMED)}{Zagreb, Croatia}
+%      \resumeItemListStart
+%        \resumeItem{Hybrid powertrain analysis, energy management and control units development}
+%      \resumeItemListEnd
+
+    \resumeSubheading
+      {{Associate for Pharmacovigilance and Rational Pharmacotherapy}}{July 2019 -- December 2021}
+      {Croatian Agency for Medicinal Products and Medical Devices (HALMED)}{Zagreb, Croatia}
+%      \resumeItemListStart
+%        \resumeItem{Hybrid powertrain analysis, energy management and control units development}
+%      \resumeItemListEnd
+    
+     \resumeSubheading
+      {{Pharmacist in public pharmacy}}{September 2018 -- June 2019}
+      {Ljekarne Filipović (Pharmacy store Filipović)}{Zagreb, Croatia}
+%      \resumeItemListStart
+%        \resumeItem{Hybrid powertrain analysis, energy management and control units development}
+%      \resumeItemListEnd
+      \resumeSubheading
+      {{Pharmacist intern in public pharmacy}}{March 2018 -- August 2018}
+      {Ljekarne Filipović (Pharmacy store Filipović)}{Zagreb, Croatia}
+%      \resumeItemListStart
+%        \resumeItem{Hybrid powertrain analysis, energy management and control units development}
+%      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {{Faculty of Pharmacy and Biochemistry}}{Zagreb, Croatia}
+      {Master of Pharmacy}{September 2013 -- September 2018}
+  \resumeSubHeadingListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{{Competences}} 
+Experienced pharmacovigilance assessor working for the National Competent Authority (NCA) responsible for human medicines in Croatia. 
+Daily work activities include in particular the following:
+\begin{itemize}
+\item Causality assessment of adverse drug reactions (ADRs),
+\item Safety signal detection and assessment,
+\item Assessment of PSURs (Periodic safety update reports) in PSUSA procedures (PSUR single assessment procedures),
+\item Assessment of variations in the terms of marketing authorisation granted by one of the following procedures: National Procedure (NP), MRP/DCP (Mutual Recognition Procedure/Decentralised Procedure) and CP (Centralised Procedure),
+\item Assessment of risk management plan (RMP),
+\item Assessment of post-authorisation safety studies (PASS) with involvement of the European Medicines Agency's Pharmacovigilance Risk Assessment Committee (PRAC),
+\item Approval of direct healthcare professional communication (DHPC),
+\item Team member of assessors in referral procedures, i.e. procedures used to resolve issues such as concerns over the safety or benefit-risk balance of a medicine or a class of medicines,
+\item Team member of the Coordination work package in the European Commission co-founded project covering the safety assessment in clinical trials.
+\end{itemize}
+
+\section{{Soft skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item Creative, Communicative, Problem solving oriented, Open-minded, Eager to learn and improve}
+ \end{itemize}
+
+\section{{Personal interests}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item Family and Friends, Hiking, Nature, Traveling}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
